@@ -201,6 +201,9 @@ public class practice {
 		Optional<Employee> secondHighest = empList.stream().sorted(Comparator.comparing(Employee::getSalary).reversed()).skip(1).findFirst();
 //		Optional<Employee> thirdHighest = empList.stream().sorted(Comparator.comparing(Employee)
 		System.out.println(secondHighest);
+		
+		List<Employee> listA=empList.stream().filter(i->i.getName().startsWith("A")).collect(Collectors.toList());
+		System.out.println(listA);
 	}
 	
 
