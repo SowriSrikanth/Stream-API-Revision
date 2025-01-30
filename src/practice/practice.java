@@ -202,6 +202,7 @@ public class practice {
 //		Optional<Employee> thirdHighest = empList.stream().sorted(Comparator.comparing(Employee)
 		System.out.println(secondHighest);
 		
+		//Added a list of Employees whose name starts with A
 		List<Employee> listA=empList.stream().filter(i->i.getName().startsWith("A")).collect(Collectors.toList());
 		System.out.println(listA);
 	}
